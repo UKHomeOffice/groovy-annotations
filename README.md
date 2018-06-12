@@ -1,2 +1,28 @@
 # groovy-annotations
-Demo of using annotations for injecting data into tests
+
+Demonstrates the use of annotations and expressions to inject test data into code
+
+## Example
+
+Check out the Main class and the SerenityRunner
+
+<code>
+ @ExpectedData(expression = "bitter", maxCount = 1)
+ void queryAndCheck(List<Cappuccino> list){
+</code>
+
+The expression "bitter" is used to dynamically look up and inject test data into the method
+
+## Trace of run
+
+Created runtime cucumber.runtime.RuntimeOptions@7d8704efI am thirsty
+I order coffee
+Looking up objects for key bitter
+I receive a Cappuccino(bitter)
+Looking up objects for key tasty
+I receive a Cappuccino(tasty cold)
+
+1 Scenarios (1 passed)
+3 Steps (3 passed)
+0m0.772s
+
