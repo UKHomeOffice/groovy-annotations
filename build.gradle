@@ -1,0 +1,20 @@
+group 'uk.gov.homeoffice.groovyannotations'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+apply plugin: 'idea'
+
+repositories{
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.9'
+    compile "io.cucumber:cucumber-core:2.1.0"
+    compile "net.serenity-bdd:serenity-core:1.8.4"
+    compile "net.serenity-bdd:serenity-cucumber:1.6.4"
+    compile "junit:junit:4.12"
+    compile 'log4j:log4j:1.2.14'
+}
+
