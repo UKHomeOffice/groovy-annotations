@@ -6,14 +6,19 @@ Demonstrates the use of annotations and expressions to inject test data into cod
 
 Check out the Main class and the SerenityRunner
 
-<code>
+```groovy
+
  @ExpectedData(expression = "bitter", maxCount = 1)
  void queryAndCheck(List<Cappuccino> list){
-</code>
+ }
+ 
+```
 
 The expression "bitter" is used to dynamically look up and inject test data into the method
 
 ## Trace of run
+
+```groovy
 
 Created runtime cucumber.runtime.RuntimeOptions@7d8704efI am thirsty
 I order coffee
@@ -26,3 +31,4 @@ I receive a Cappuccino(tasty cold)
 3 Steps (3 passed)
 0m0.772s
 
+```
