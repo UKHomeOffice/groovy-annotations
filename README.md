@@ -14,7 +14,9 @@ Check out the Main class and the SerenityRunner
  
 ```
 
-The expression "bitter" is used to dynamically look up and inject test data into the method
+The expression "bitter" is used to dynamically look up and inject test data into the method. 
+
+This mechanism can be extended to query different datasources by mapping expressions to sql queries, elastic search indexes or any other custom datasource.
 
 ## Trace of run
 
